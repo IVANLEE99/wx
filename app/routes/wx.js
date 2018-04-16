@@ -9,7 +9,10 @@ router.get('/', function(req, res, next) {
 });
 /* GET users listing. */
 router.post('/', function(req, res, next) {
-  console.log(req.body);
+  console.log(req.body,':body');
+  console.log(req.params,':params');
+  console.log(req.query,':query');
+
   res.send('');
 });
 
