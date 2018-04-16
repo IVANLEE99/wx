@@ -41,7 +41,6 @@ function msgText(res,data){
       '<MsgType><![CDATA[text]]></MsgType>' +
       '<Content><![CDATA['+data.content+']]></Content>' +
       '</xml>';
-    res.end(resMsg);
      res.send(resMsg);
     
 }
