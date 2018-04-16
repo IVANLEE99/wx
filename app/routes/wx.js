@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('test wx!');
+  console.log(req);
+  var msg = req.query.echostr;
+  res.send(msg);
 });
 
 module.exports = router;
