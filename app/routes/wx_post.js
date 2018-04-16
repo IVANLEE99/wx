@@ -3,14 +3,9 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-//   console.log(req);
+  console.log(req);
   var msg = req.query.echostr;
   res.send(msg);
-});
-/* GET users listing. */
-router.post('/', function(req, res, next) {
-  console.log(req.body);
-  res.send('');
 });
 
 module.exports = router;

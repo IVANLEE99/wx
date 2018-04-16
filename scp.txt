@@ -2,4 +2,6 @@
 scp  -r node root@47.98.167.141:/root/2018/node
 #下载文件
 scp -r  root@47.98.167.141:/root/2018/test.md /Users/ivanlee/Desktop
+#启动
+sudo DEBUG=app:* npm start
 
